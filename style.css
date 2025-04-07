@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f0f0;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+.projects {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-card .buttons a {
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 5px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 40px;
+}
