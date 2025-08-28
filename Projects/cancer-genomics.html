@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cancer Genomics Data Analysis – Project Details</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+    <h1>Cancer Genomics Data Analysis</h1>
+    <p class="subtitle">Data Analyst and Pipeline Developer | R, DESeq2, ggplot2, TCGA</p>
+  </header>
+
+  <main class="container">
+    <section class="project-details">
+      <h2>Overview</h2>
+      <p>I helped build a pipeline in R to study mutation patterns and survival in TCGA kidney cancer patients. We clustered by frequent mutations, compared outcomes, and explored pathway changes using RNA expression.</p>
+
+      <h2>Tools</h2>
+      <ul>
+        <li>R, tidyverse</li>
+        <li>DESeq2 for RNA-seq analysis</li>
+        <li>ggplot2 for plots</li>
+        <li>TCGA datasets and cBioPortal</li>
+      </ul>
+
+      <h2>Role</h2>
+      <p>Data Analyst and Pipeline Developer</p>
+
+      <h2>Description</h2>
+      <p>I grouped patients using Ward.D2 hierarchical clustering on binary mutation profiles for the 50 most altered genes. Kaplan–Meier curves and log-rank tests compared survival between clusters. PCA helped confirm subgroup structure and guided our comparisons.</p>
+      <p>I ran DESeq2 to analyze expression differences and used pathway enrichment to highlight metabolism and immune signaling. I handled preprocessing, normalization, and visualizations including survival curves, heatmaps, and pathway plots. The pipeline is modular and reproducible and improved my skills in unsupervised learning, survival models, and biological interpretation.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Monesha Basker</p>
+  </footer>
+</body>
+</html>
