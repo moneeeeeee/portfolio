@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grid Migration Simulator – Project Details</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+    <h1>Grid Migration Simulator</h1>
+    <p class="subtitle">Simulation Developer | Java, Gradle, JUnit</p>
+  </header>
+
+  <main class="container">
+    <section class="project-details">
+      <h2>Overview</h2>
+      <p>
+        I designed and implemented a city simulation in Java to explore how agents migrate through a grid-based environment 
+        based on satisfaction, crowding, and fairness. Each agent represents a resident evaluating their surroundings to 
+        decide whether to stay, move, or relocate.
+      </p>
+
+      <h2>Tools</h2>
+      <ul>
+        <li>Java (object-oriented design)</li>
+        <li>Gradle (build automation)</li>
+        <li>JUnit (testing)</li>
+      </ul>
+
+      <h2>Role</h2>
+      <p>Simulation Developer</p>
+
+      <h2>Description</h2>
+      <p>
+        The simulation used modular classes for agents, buildings, walkways, and time tracking. I implemented a two-step 
+        update system to ensure consistency in agent decision-making across the grid. Agents evaluated satisfaction thresholds, 
+        reset conditions, and density limits when deciding whether to move. I integrated Gradle for build automation and 
+        JUnit to test movement logic and system stability. 
+      </p>
+      <p>
+        To analyze outcomes, I built custom TimeSeries objects to track agent behavior and placement over time, which revealed 
+        emergent patterns such as congestion and clustering. This project showed how local decision-making scales into large 
+        system behavior — a concept directly relevant to distributed systems, smart city planning, and load balancing.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Monesha Basker</p>
+  </footer>
+</body>
+</html>
