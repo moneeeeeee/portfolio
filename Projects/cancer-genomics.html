@@ -3,35 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cancer Genomics Data Analysis – Project Details</title>
+  <title>Cancer Genomics & Multi-Omics Analysis – Project Details</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <a href="index.html" class="back-link">← Back to Portfolio</a>
-    <h1>Cancer Genomics Data Analysis</h1>
-    <p class="subtitle">Data Analyst and Pipeline Developer | R, DESeq2, ggplot2, TCGA</p>
+    <h1>Cancer Genomics & Multi-Omics Analysis</h1>
+    <p class="subtitle">Data Analyst and Pipeline Developer | R, DESeq2, ggplot2, TCGA datasets</p>
   </header>
 
   <main class="container">
     <section class="project-details">
       <h2>Overview</h2>
-      <p>I helped build a pipeline in R to study mutation patterns and survival in TCGA kidney cancer patients. We clustered by frequent mutations, compared outcomes, and explored pathway changes using RNA expression.</p>
+      <p>
+        I developed an R pipeline to study the relationship between genetic mutations and survival in kidney cancer patients using The Cancer Genome Atlas (TCGA). 
+        This work combined both <strong>multi-omics patient matching</strong> across datasets and <strong>downstream genomic analysis</strong> including clustering, survival modeling, and pathway enrichment.
+      </p>
 
       <h2>Tools</h2>
       <ul>
-        <li>R, tidyverse</li>
-        <li>DESeq2 for RNA-seq analysis</li>
-        <li>ggplot2 for plots</li>
-        <li>TCGA datasets and cBioPortal</li>
+        <li>R and tidyverse</li>
+        <li>DESeq2 for RNA-seq expression analysis</li>
+        <li>ggplot2 for visualizations</li>
+        <li>survival and survminer for Kaplan–Meier models</li>
+        <li>TCGA ccRCC datasets, cBioPortal</li>
       </ul>
 
       <h2>Role</h2>
       <p>Data Analyst and Pipeline Developer</p>
 
       <h2>Description</h2>
-      <p>I grouped patients using Ward.D2 hierarchical clustering on binary mutation profiles for the 50 most altered genes. Kaplan–Meier curves and log-rank tests compared survival between clusters. PCA helped confirm subgroup structure and guided our comparisons.</p>
-      <p>I ran DESeq2 to analyze expression differences and used pathway enrichment to highlight metabolism and immune signaling. I handled preprocessing, normalization, and visualizations including survival curves, heatmaps, and pathway plots. The pipeline is modular and reproducible and improved my skills in unsupervised learning, survival models, and biological interpretation.</p>
+      <p>
+        The first step was ensuring consistency across omics data. I wrote R scripts to parse TCGA barcodes, standardize patient identifiers, 
+        and remove duplicates. This alignment produced a clean core cohort of 354 patients with complete clinical, mutation, and RNA-seq coverage, 
+        enabling downstream analysis without missing or misaligned data.
+      </p>
+      <p>
+        Using this matched cohort, I clustered patients based on binary mutation profiles across the 50 most frequently altered genes, applying Ward.D2 hierarchical clustering. 
+        Kaplan–Meier survival analysis compared outcomes between clusters, while Principal Component Analysis (PCA) confirmed the existence of distinct subgroups. 
+        I then used DESeq2 for differential expression analysis and performed pathway enrichment to identify disrupted biological processes such as metabolism and immune signaling.
+      </p>
+      <p>
+        I generated survival curves, mutation heatmaps, and pathway plots with ggplot2, making the pipeline modular and reproducible. 
+        This project strengthened my ability to integrate data wrangling, unsupervised clustering, and survival modeling, and to connect genomic features to clinical outcomes.
+      </p>
     </section>
   </main>
 
